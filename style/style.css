@@ -1,18 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
 
 
 
-
-
-
-.d-flex input{
+.d-flex input
+{
 	margin:.9em 0em;
   
 }
 
-.d-flex button{
+.d-flex button
+{
 
-	margin: 1.5em .6em;
-	padding: .3em 2.4em;
+	margin:1.5em.6em;
+	padding:.3em 2.4em;
 }
 
+.container table{
+
+	margin: .7em 9em;
+}
+ table.btnedit{
+
+ 	color:lightgreen;
+ 	cursor: pointer;
+ }
