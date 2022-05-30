@@ -98,41 +98,109 @@ ul li .active a{
 
 }
 
+.footer{
+
+	background-color: #24262b;
+	
+}
+
+
+
+
+
+
+
 /* booking.html */
 
-body > table{
 
-	width: 80%;
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.mainTable{
+
+	text-align: center;
+	margin-top: 20px;
+}
+
+#Table{
+
+	margin: 5px auto;
+}
+
+table tr: not(:first-child):hover{
+         background-color: #ddd;
+
 }
 
 table{
 
+	width: 60%;
 	border-collapse: collapse;
+	text-align: center;
+	margin-left: 20%;
 }
 
-table.list{
+tr:nth-child(odd){
 
-	width:100%;
+	background-color: lightgrey;
+}
+.UpdateBtn{
+
+	text-align: center;
 }
 
-td,th{
+.UpdateBtn button{
 
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
+	background-color: red;
+	padding: 5px 10px;
+	border: 1px #008000;
+	color: white;
+	margin: 10px 0;
+	border-radius: 5px;
 }
 
-tr:nth-child(even).table.list thead>tr{
+.UpdateBtn button:hover{
 
-	background-color: #dddddd
+    background-color: lightgrey: 
+    color: black;
+    transition: .5s;
+
+}
+.editTable{
+
+	display: none; 
+	padding-top: 30px;
+	width: 30%;
+	margin: 0 auto;
+
+	
+
 }
 
-input[type=text],input[type=number]{
+.left{
 
-	width: 100%;
-	padding: 12px 28px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid;
-	border-radius: 4px
+	float: left;
+}
+
+.right{
+
+	float: right;
+}
+
+.editRowBtn{
+
+	background-color: #0DC143;
+	color: white;
+	border: 1px solid black;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.editRowBtn:hover{
+
+	background-color: lightgreen;
+	color: black;
+	transition: .5s;
 }

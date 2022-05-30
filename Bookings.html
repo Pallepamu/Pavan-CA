@@ -2,82 +2,94 @@
 <html>
 <head>
 	<title> Bookings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+
     <link rel="stylesheet" type="text/css" href="style/style.css">
 
 </head>
 <body>
-  <table>
-  	
-  <tr>
-  	
-  	<td>
-  		<form onsubmit="event.preventDefault();"autocomplete="off">
-            <div>
+  <div class= "Bookings">
+  	<h1>Customer Booking Information</h1>
+  	<table id="table" border="1">
 
-  			<label>Full Name</label>
-  			<input type="text" name="Full Name">
-  			</div>
+  		<tr>
+  			
+  			<th>Srno</th>
+  			<th>FullName</th>
+  			<th>Address</th>
+  			<th>Mobile/Email</th>
+  			<th>Package</th>
 
+  			</tr>
 
-           <div>
+  			<tr>
+  				<td>01</td>
+  				<td>Garry Murphy</td>
+  				<td>Dublin</td>
+  				<td>09876894</td>
+  				<td>Dubai</td>
 
-  			<label>Address</label>
-  			<input type="text" name="Full Name">
-  			</div>
+  			</tr>
 
-           <div>
+  			<tr>
+  				<td>02</td>
+  				<td>Daniel Christian</td>
+  				<td>Cork</td>
+  				<td>0987435</td>
+  				<td>Thailand</td>
 
-  			<label>Mobile/Email</label>
-  			<input type="text" name="Mobile/Email">
-  			</div>
+  			</tr>
 
+            <tr>
+  				<td>03</td>
+  				<td>Michael </td>
+  				<td>Waterford</td>
+  				<td>0534567</td>
+  				<td>Singapore</td>
 
-  			<div>
+  			</tr>
+  			<tr>
+  				<td>04</td>
+  				<td>Shauna</td>
+  				<td>Drogheda</td>
+  				<td>0298765</td>
+  				<td>Denmark</td>
 
-  			<label>Booking dates/Package</label>
-  			<input type="text" name="Booking dates">
-  			</div>
+  			</tr>
+  			<tr>
+  				<td>05</td>
+  				<td>Pranuthi</td>
+  				<td>Wicklow</td>
+  				<td>087689543</td>
+  				<td>Israel</td>
 
-            
-
-            <div class="form-action-button">
-            	
-            	<input type="Submit" name="Submit">
-            </div>
-       
-  		</form>
-
-  	</td>
-          <table class="list" id="FullName list">
-          	<thead>
-          		
-             <tr>
-             	<th>FullName</th>
-             	<th>Address</th>
-             	<th>Mobile/Email</th>
-             	<th>Booking dates</th>
-
-
-
-
-             </tr>
-
-          	</thead>
-          	
-
-          </table>
+  			</tr>
 
 
-  </tr>
+  	</table>
 
-  </table>
+  </div>
+
+         <div class="UpdateBtn">
+         	<button onclick="editTabledisplay()">Update data</button>
+         	
+
+         </div>
+
+            <div class="left">FullName:</div><div><input type="text" name="FullName"id="FullName"></div><br>
+            <div class="left">Address:</div><div><input type="text" name="Address"id="Address"></div><br>
+            <div class="left">Mobile/Email:</div><div><input type="text" name="Mobile/Email"id="Mobile/Email"></div><br>
+            <div class="left">Package:</div><div><input type="text" name="Package"id="Package"></div>
+            <button onclick="editrow()" class="editRowbtn">Update</button><br>
 
 
 
 
 
 
-
-<script src="script.js"></script>
+<script src="./JS/script.js"></script>
 </body>
 </html>

@@ -1,44 +1,34 @@
-function onformsubmit (){
- var formdata = readFormData();
- insertNewRecord(formData);
-}
-	
+var table = document.getElementById("table"),rIndex;
 
-function readFormData(){
+for(var i=1; i < table.rows.length; i++){
+ table.rows[1].onclick = function(){
+      rIndex = this.rowIndex;
+      Console.log(rIndex);
 
-	var formData = {};
+      document.getElementById("FullName").value = this.cells[1].innerHTML;
+      document.getElementById("Address").value = this.cells[2].innerHTML;
+      document.getElementById("Mobile/Email").value = this.cells[3].innerHTML;
+      document.getElementById("Package").value = this.cells[4].innerHTML;
 
-	formData["Full Name"] = document.getElementById("Full Name");
-	formData["Address"] = document.getElementById("Address");
-	formData["Mobile/Email"] = document.getElementById("Mobile/Email");
-	formData["Booking dates/Package"] = document.getElementById("Booking dates/Package");
+   };
 
-	return formData;
+     function editRow(){
 
-}
+     table.rows[rIndex].cells[1].innerHTML = document.getElementById("FullName").value;
+     table.rows[rIndex].cells[2].innerHTML = document.getElementById("Address").value;
+     table.rows[rIndex].cells[3].innerHTML = document.getElementById("Mobile/Email").value;
+     table.rows[rIndex].cells[4].innerHTML = document.getElementById("Package").value;
 
-function insertNewRecord(data){
-	var table = document.getElementById("FullName List").getElementByTagName('tbody')[0];
-	var newrow = table.InsertRow(table.length);
-	
-	cell1 = newrow.insertCell(0);
-	cell1.innerHTML = data.FullName
 
-	cell2 = newrow.insertCell(1);
-	cell2.innerHTML = data.FullName
-
-	cell3 = newrow.insertCell(2);
-	cell3.innerHTML = data.FullName
-
-	cell4 = newrow.insertCell(3);
-	cell4.innerHTML = data.FullName
-
-	cell1 = newrow.insertCell(4);
-	cell1.innerHTML = <a>Edit</a> 
-	                  <a>Delete</a>;//"" ''''
+     }
+    function editTableDisplay(){
+    	document.querySelector
+    }
 
 
 
 
+    	
+    }
 
-}
+ 
