@@ -1,7 +1,7 @@
 
 
 body{
-    background-image: url(bg.jpg);
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -72,6 +72,15 @@ button{
 button:hover{
     background: #7cbcf1;
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
+
+/*...information...*/
+
+
+.Items{
+
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	padding: 20px 10px;
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+}
